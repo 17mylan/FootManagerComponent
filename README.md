@@ -15,7 +15,7 @@
 - [Table of contents](#table-of-contents)
 - [Documentation 🗎](#documentation-)
   - [Start 🎬](#start-)
-  - [Initialize with character animations 🧝](#initialize-with-character-animations-)
+  - [Initialize with character and AI animations 🧝](#initialize-with-character-and-ai-animations-)
   - [Call FootManager Functions 📲](#call-footmanager-functions-)
   - [Foot Sounds 🌎](#foot-sounds-)
   - [Customize 🆕](#customize-)
@@ -26,7 +26,8 @@
 - Download [this repository](https://github.com/17mylan/FootManagerComponent/)
 - Add the file named "FootManager" to the Content File of your project
 - Add the component named "FootManager" inside of your character/AI blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
-## Initialize with character/AI animations 🧝
+  
+## Initialize with character and AI animations 🧝
 - Open your animations where the player needs to use the FootManager component (e.g., Walk, Run)
 - Create 2 Animation Notifiers (one for the left foot and one for the right foot). The documentation uses predefined Unreal animation notifiers such as "l_foot_plant" and "r_foot_plant" 
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/2d6411ba-c17b-4d7e-b440-10a6e369515d)

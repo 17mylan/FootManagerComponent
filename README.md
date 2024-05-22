@@ -35,7 +35,7 @@
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/753fc2dd-1297-43a1-a2a3-f031dc7b81b0)
 
 ## Call FootManager Functions 📲
-- Go to your character animation blueprint and create or use the character blueprint reference where you have [set up](#start-) the "FootManager" component
+- Go to your character/AI animation blueprint and create or use the character blueprint reference where you have [set up](#start-) the "FootManager" component
 - Using your [animation notifiers](#initialize-with-character-animations-), call the function named "Call Foot Manager" and assign the character variable to the function
 - Ensure that you assign the correct foot with the animation notifiers (e.g., the left animation notifier should be called when the character's left foot is on the floor in the animation)
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/999bf482-d69d-4a77-af24-2b4a24ce9923)

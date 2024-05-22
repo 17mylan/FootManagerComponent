@@ -24,45 +24,46 @@
 ## Start 🎬
 - Download [this repository](https://github.com/17mylan/FootManagerComponent/)
 - Add the file named "FootManager" to the Content File of your project
-- Add the component named "FootManager" inside of your character blueprint ![image](https://github.com/17mylan/Experimental/assets/89989070/32c2fe5c-4aa6-4a4a-a8fc-9370788e274a)
-
+- Add the component named "FootManager" inside of your character blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
 ## Initialize with character animations 🧝
 - Open your animations where the player needs to use the FootManager component (e.g., Walk, Run)
 - Create 2 Animation Notifiers (one for the left foot and one for the right foot). The documentation uses predefined Unreal animation notifiers such as "l_foot_plant" and "r_foot_plant" 
-![image](https://github.com/17mylan/Experimental/assets/89989070/a5c83c8d-0866-47a1-8f4f-6ac2870f43d0)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/2d6411ba-c17b-4d7e-b440-10a6e369515d)
 
 - Place your animation notifiers to be timed when the character steps on the floor
-![image](https://github.com/17mylan/Experimental/assets/89989070/adcf4e9d-2301-400a-af50-ec54c7c7fb4e)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/753fc2dd-1297-43a1-a2a3-f031dc7b81b0)
 
 ## Call FootMontage Functions 📲
 - Go to your character animation blueprint and create or use the character blueprint reference where you have [set up](#start-) the "FootManager" component
 - Using your [animation notifiers](#initialize-with-character-animations-), get "FootManager" component and call function named "FootManager"
 - Ensure that you assign the correct foot with the animation notifiers (e.g., the left animation notifier should be called when the character's left foot is on the floor in the animation)
-![image](https://github.com/17mylan/Experimental/assets/89989070/b40ade04-50ee-4f70-8bde-bb2321db8589)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/805402c7-0349-473d-ae7d-f8d4fd92e55d)
 
 ## Foot Sounds 🌎
 - To create custom sounds based on character floor environment, navigate to:
 > Project settings > Physics > Physical Surface > Add new physical Surface Name (e.g, Dirt)
 
-![image](https://github.com/17mylan/Experimental/assets/89989070/2ecd8acf-11c5-40ae-b381-2de8db4af978)
+  ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/a20bce4d-515a-4ac1-97d5-803acc5ce005)
 
 - Create new Physical Material
 > Physics > Physical Material > PhysicalMaterial
 
-![image](https://github.com/17mylan/Experimental/assets/89989070/6a7b206a-88bd-40ad-acfa-ed520352ae6d)
+  ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/4fb773ad-56c7-4515-9cc7-085c142396dd)
 
 - Open your new Physical Material and set the value of "Surface Type" to the new Surface material you [created in the project settings](#foot-sounds-) (e.g., Dirt)
-![image](https://github.com/17mylan/Experimental/assets/89989070/fc25a575-2194-4e77-802d-cc9e326b0312)
+
+  ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/c3f7cc28-8a84-4cb3-a562-2b8b1bc14864)
 
 - Add your new Physical Material to your environment (e.g., Plane) in the "Physical Material Override" section of the collision preset
-![image](https://github.com/17mylan/Experimental/assets/89989070/e695336a-f732-4ede-9b27-2e51793b32cd)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/2b3e7ce3-9969-4670-a7e6-aa73f02a0ed3)
 
 - Add a new step sounds list value by selecting your new surface type and assign your footstep sound inside your [character blueprint component named "FootManager"](#start-)
-![image](https://github.com/17mylan/Experimental/assets/89989070/a0ddd37c-8a80-479b-818d-b04bb4f1b3f6)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/74f00a04-8a7a-4b14-a04b-5452f7971726)
 
 ## Customize 🆕
 - In your character blueprint, select the component named "FootManager" in the components window. In the details window, you can now customize the values as desired
-![image](https://github.com/17mylan/Experimental/assets/89989070/24196003-7a39-47fa-a301-86162ef8fb5d)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/8db59d68-826c-405a-b0ac-3d32ee2d5276)
+
 > Component Active?: Enable or disable the component
 
 > Print Foot Step Decal?: Enable or disable the functionality to print foot decals on the ground

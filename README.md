@@ -4,10 +4,10 @@
 
 # Informations 📜
 - Customizable Unreal Engine component for generating footprints and footsteps sounds based on character environment.
-- This component has been developed and utilized in Unreal Engine 5.3.2. It is compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
-- It is designed for use with a third-person character blueprint featuring animations.
+- This component has been developed and utilized in Unreal Engine 5.3.2. It's compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
+- It's designed for use with a third-person character blueprint featuring animations.
 - The component is developed using a single Blueprint and is customizable (Blueprint count: 1)
-- It is compatible with AI (Character Class)
+- It's compatible with AI (Character Class)
 
 # Table of contents
 
@@ -19,6 +19,7 @@
   - [Call FootManager Functions 📲](#call-footmanager-functions-)
   - [Foot Sounds 🌎](#foot-sounds-)
   - [Customize 🆕](#customize-)
+  - [Events 🎫](#events-)
 
 ## Documentation 🗎
 
@@ -75,3 +76,12 @@
 > Play Foot Step Sound?: Enable or disable the functionality to play foot step sound
 
 > Sounds Parameters: Customize the rotation, volume multiplier, pitch multiplier, start time, attenuation settings, concurrency settings, initials params and step sounds list
+
+## Events 🎫
+- It's possible to use foot manager events when a character or AI triggers one. (You can also use the "Assign" method in other blueprints)
+  
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/0cf333d8-64df-42e5-92f8-363fec646009)
+
+> Examples and ideas of what you can do with these events:
+
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/0e6c3d91-a862-407b-8a9f-f0d862a09ed7)

@@ -7,7 +7,7 @@
 - This component has been developed and utilized in Unreal Engine 5.3.2. It is compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
 - It is designed for use with a third-person character blueprint featuring animations.
 - The component is developed using a single Blueprint and is customizable (Blueprint count: 1)
-- It is not compatible with AI
+- It is compatible with AI (Character Class)
 
 # Table of contents
 
@@ -16,7 +16,7 @@
 - [Documentation 🗎](#documentation-)
   - [Start 🎬](#start-)
   - [Initialize with character animations 🧝](#initialize-with-character-animations-)
-  - [Call FootMontage Functions 📲](#call-footmontage-functions-)
+  - [Call FootManager Functions 📲](#call-footmanager-functions-)
   - [Foot Sounds 🌎](#foot-sounds-)
   - [Customize 🆕](#customize-)
 
@@ -34,11 +34,11 @@
 - Place your animation notifiers to be timed when the character steps on the floor
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/753fc2dd-1297-43a1-a2a3-f031dc7b81b0)
 
-## Call FootMontage Functions 📲
+## Call FootManager Functions 📲
 - Go to your character animation blueprint and create or use the character blueprint reference where you have [set up](#start-) the "FootManager" component
-- Using your [animation notifiers](#initialize-with-character-animations-), get "FootManager" component and call function named "FootManager"
+- Using your [animation notifiers](#initialize-with-character-animations-), call the function named "Call Foot Manager" and assign the character variable to the function
 - Ensure that you assign the correct foot with the animation notifiers (e.g., the left animation notifier should be called when the character's left foot is on the floor in the animation)
-![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/805402c7-0349-473d-ae7d-f8d4fd92e55d)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/999bf482-d69d-4a77-af24-2b4a24ce9923)
 
 ## Foot Sounds 🌎
 - To create custom sounds based on character floor environment, navigate to:

@@ -65,23 +65,28 @@
 
 ## Customize 🆕
 - In your character/AI blueprint, select the component named "FootManager" in the components window. In the details window, you can now customize the values as desired
-![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/8db59d68-826c-405a-b0ac-3d32ee2d5276)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/68669e82-0db6-4260-af95-1f915c67bbe1)
 
 > Component Active?: Enable or disable the component
 
-> Print Foot Step Decal?: Enable or disable the functionality to print foot decals on the ground
+> Print Foot Step Decal?: Enable or disable the feature to print foot decals on the ground
 
 > Decals Parameters: Customize the material, trace line-to-feet distance, character's foot sockets and socket rotation adjustment, foot decal size and foot decal duration
 
-> Play Foot Step Sound?: Enable or disable the functionality to play foot step sound
+> Play Foot Step Sound?: Enable or disable the feature to play foot step sound
 
 > Sounds Parameters: Customize the rotation, volume multiplier, pitch multiplier, start time, attenuation settings, concurrency settings, initials params and step sounds list
 
+> Play Foot Step VFX?: Enable or disable the feature
+
+> VFX Parameters: Customize the VFX Method (using Niagara System or Particle System), rotation and scale
+
 ## Events 🎫
 - It's possible to use foot manager events when a character or AI triggers one. (You can also use the "Assign" method in other blueprints)
-  
-![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/0cf333d8-64df-42e5-92f8-363fec646009)
+
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/b1bc09f4-f0fc-493b-bc78-c0f8233caec7)
 
 > Examples and ideas of what you can do with these events:
 
-![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/0e6c3d91-a862-407b-8a9f-f0d862a09ed7)
+![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/31aa6409-d818-4964-aefe-d6603c312567)
+

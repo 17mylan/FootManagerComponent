@@ -4,7 +4,7 @@
 
 # Informations 📜
 - Customizable Unreal Engine component for generating footprints and footsteps sounds based on character environment.
-- This component has been developed and utilized in Unreal Engine 5.3.2. It's compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
+- This component has been developed and utilized in Unreal Engine 5.4.4. It's compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
 - It's designed for use with a third-person character blueprint featuring animations.
 - The component is developed using a single Blueprint Component and is customizable (Blueprint Component count: 1)
 - It's compatible with AI (using Character Class)
@@ -24,8 +24,8 @@
 ## Documentation 🗎
 
 ## Start 🎬
-- Download [this repository](https://github.com/17mylan/FootManagerComponent/)
-- Add the file named "FootManager" to the Content File of your project
+- Download [this repository](https://github.com/17mylan/FootManagerComponent/) or from [Unreal Engine Marketplace](https://github.com/17mylan/FootManagerComponent/) (Not accessible at the moment)
+- If you downloaded the plugin from GitHub, install the un-zipped file in your Unreal Engine project plugin file. (e.g, D:\UnrealProject\MyProject\Plugins\FootManager)
 - Add the component named "FootManager" inside of your character/AI blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
   
 ## Initialize with character and AI animations 🧝

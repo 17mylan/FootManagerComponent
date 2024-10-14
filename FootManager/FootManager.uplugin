@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "FootManager",
+	"Description": "Customizable Unreal Engine component for generating footprints and footsteps sounds based on character environment. (Only Blueprint, No C++)",
+	"Category": "FootManager",
+	"CreatedBy": "DE MATTEIS Mylan",
+	"CreatedByURL": "https://x.com/mylandmtts",
+	"DocsURL": "https://github.com/17mylan/FootManagerComponent",
+	"MarketplaceURL": "",
+	"SupportURL": "https://x.com/mylandmtts",
+	"EngineVersion": "5.4.0",
+	"CanContainContent": true,
+	"Installed": true
+}

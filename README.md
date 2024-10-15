@@ -4,7 +4,7 @@
 
 # Informations 📜
 - Customizable Unreal Engine component for generating footprints and footsteps sounds based on character environment.
-- This component has been developed and utilized in Unreal Engine 5.4.4. It's compatible with Unreal Engine 5.X ([Unreal Engine](https://www.unrealengine.com/))
+- This component has been developed and utilized in Unreal Engine 5.4.4. ([Unreal Engine](https://www.unrealengine.com/))
 - It's designed for use with a third-person character blueprint featuring animations.
 - The component is developed using a single Blueprint Component and is customizable (Blueprint Component count: 1)
 - It's compatible with AI (using Character Class)

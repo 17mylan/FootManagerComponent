@@ -85,6 +85,7 @@
 
 - To customize your decal, you can create a material and set it to "Deffered Decal" as material domain and blend mode to "Translucent"
 - Make sur to copy the same material from the picture and use the same Param Names ("Color" & "Intensity". Color & Intensity are used to determine your color and normal intensity on the FootManager Component on your blueprint). You can change the texture as you need.
+- Once it's done, make sure to create a Material Instance of your material and assign it to FootManager > PrintCircleDecal > CircleParameters > CircleDecalMaterial.
 ![image](https://github.com/user-attachments/assets/6d00cd48-a52a-4ab9-8274-8a7fa9219f78)
 
 ## Customize 🆕

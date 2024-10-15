@@ -25,7 +25,7 @@
 
 ## Start 🎬
 - Download [this repository](https://github.com/17mylan/FootManagerComponent/) or from [Unreal Engine Marketplace](https://github.com/17mylan/FootManagerComponent/) (Not accessible at the moment)
-- If you downloaded the plugin from GitHub, install the un-zipped file in your Unreal Engine project plugin file. (e.g, D:\UnrealProject\MyProject\Plugins\FootManager)
+- If you downloaded the plugin from GitHub, install the un-zipped file named "FootManager" in your Unreal Engine plugin file. (e.g, D:\Game Engine\UE_5.4\Engine\Plugins\Marketplace\FootManager)
 - Add the component named "FootManager" inside of your character/AI blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
   
 ## Initialize with character and AI animations 🧝

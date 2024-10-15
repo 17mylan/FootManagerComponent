@@ -69,17 +69,23 @@
 
 ## Circle Decal ⭕
 
-- Display only 1 circle as material on the ground. The circle stay on the ground whenever the player is in the air. The decal do not tick when the player is on the ground but tick when the player is falling (Tick use GetWorldDeltaSeconds Interval).
+- Display only 1 circle as material on the ground. The circle stay on the ground whenever the player is in the air.
+- The decal do not tick when the player is on the ground but tick when the player is falling (Tick use GetWorldDeltaSeconds Interval).
 ![image](https://github.com/user-attachments/assets/13aa2abe-1d0e-4635-9a15-208151939e95)
 
 - Go to your character's/AI blueprint. Call the event named "Event OnMovementModeChanged" and link this event to the FootManager Event named "FootManagerOnMovementModeChanged"
 ![image](https://github.com/user-attachments/assets/94057239-9563-4a17-8aba-69a17b2fc54f)
 
-- Add "Decal" to your blueprint and set it to be child of your mesh. Add the tag "CircleDecal" on your decal component tag (The tag can be changed but you need to have the same tag as FootManager > PrintCircleDecal > CircleParameters > CircleDecalTag) The tag is used to identify and use the correct decal. Change your decal's values as you need (For the demonstration, FootManager CircleDecal use these values to work properly)
+- Add "Decal" to your blueprint and set it to be child of your mesh. Add the tag "CircleDecal" on your decal component tag (The tag can be changed but you need to have the same tag as FootManager > PrintCircleDecal > CircleParameters > CircleDecalTag) The tag is used to identify and use the correct decal.
+- Change your decal's values as you need (For the demonstration, FootManager CircleDecal use these values to work properly)
 ![image](https://github.com/user-attachments/assets/e46f2379-88c1-4aaa-81af-3207478c0678)
 
 - Select your character's/AI mesh and disable the "Receives Decals" option
 ![image](https://github.com/user-attachments/assets/83800f19-08a1-48ad-acee-a749fac194a4)
+
+- To customize your decal, you can create a material and set it to "Deffered Decal" as material domain and blend mode to "Translucent"
+- Make sur to copy the same material from the picture and use the same Param Names ("Color" & "Intensity". Color & Intensity are used to determine your color and normal intensity on the FootManager Component on your blueprint). You can change the texture as you need.
+![image](https://github.com/user-attachments/assets/6d00cd48-a52a-4ab9-8274-8a7fa9219f78)
 
 ## Customize 🆕
 - In your character/AI blueprint, select the component named "FootManager" in the components window. In the details window, you can now customize the values as desired

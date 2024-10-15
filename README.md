@@ -18,6 +18,7 @@
   - [Initialize with character and AI animations 🧝](#initialize-with-character-and-ai-animations-)
   - [Call FootManager Functions 📲](#call-footmanager-functions-)
   - [Foot Sounds 🌎](#foot-sounds-)
+  - [Circle Decal ⭕](#circle-decal-)
   - [Customize 🆕](#customize-)
   - [Events 🎫](#events-)
 
@@ -26,10 +27,13 @@
 ## Start 🎬
 - Download [this repository](https://github.com/17mylan/FootManagerComponent/) or from [Unreal Engine Marketplace](https://github.com/17mylan/FootManagerComponent/) (Not accessible at the moment)
 - If you downloaded the plugin from GitHub, install the un-zipped file named "FootManager" in your Unreal Engine plugin file. (e.g, D:\Game Engine\UE_5.4\Engine\Plugins\Marketplace\FootManager)
-- Add the component named "FootManager" inside of your character/AI blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
+- Start your project and enable the plugin
+> Settings > Plugins > FootManager > Enable and restart your editor
+![image](https://github.com/user-attachments/assets/bc4ecbdf-6ba3-4fb7-8c6f-dfc45f6f18d9)
   
 ## Initialize with character and AI animations 🧝
-- Open your animations where the player needs to use the FootManager component (e.g., Walk, Run)
+- Add the component named "FootManager" inside of your character/AI blueprint ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/00bd509f-4441-49b8-ac5b-1f599bad335d)
+- Open your animations blueprint where the player needs to use the FootManager component (e.g., Walk, Run)
 - Create 2 Animation Notifiers (one for the left foot and one for the right foot). The documentation uses predefined Unreal animation notifiers such as "l_foot_plant" and "r_foot_plant" 
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/2d6411ba-c17b-4d7e-b440-10a6e369515d)
 
@@ -63,28 +67,46 @@
 - Add a new step sounds list value by selecting your new surface type and assign your footstep sound inside your [character/AI blueprint component named "FootManager"](#start-)
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/74f00a04-8a7a-4b14-a04b-5452f7971726)
 
+## Circle Decal ⭕
+
+- Display only 1 circle as material on the ground. The circle stay on the ground whenever the player is in the air. The decal do not tick when the player is on the ground but tick when the player is falling (Tick use GetWorldDeltaSeconds Interval).
+![image](https://github.com/user-attachments/assets/13aa2abe-1d0e-4635-9a15-208151939e95)
+
+- Go to your character's/AI blueprint. Call the event named "Event OnMovementModeChanged" and link this event to the FootManager Event named "FootManagerOnMovementModeChanged"
+![image](https://github.com/user-attachments/assets/94057239-9563-4a17-8aba-69a17b2fc54f)
+
+- Add "Decal" to your blueprint and set it to be child of your mesh. Add the tag "CircleDecal" on your decal component tag (The tag can be changed but you need to have the same tag as FootManager > PrintCircleDecal > CircleParameters > CircleDecalTag) The tag is used to identify and use the correct decal. Change your decal's values as you need (For the demonstration, FootManager CircleDecal use these values to work properly)
+![image](https://github.com/user-attachments/assets/e46f2379-88c1-4aaa-81af-3207478c0678)
+
+- Select your character's/AI mesh and disable the "Receives Decals" option
+![image](https://github.com/user-attachments/assets/83800f19-08a1-48ad-acee-a749fac194a4)
+
 ## Customize 🆕
 - In your character/AI blueprint, select the component named "FootManager" in the components window. In the details window, you can now customize the values as desired
 ![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/68669e82-0db6-4260-af95-1f915c67bbe1)
 
 > Component Active?: Enable or disable the component
 
-> Print Foot Step Decal?: Enable or disable the feature to print foot decals on the ground
+> Print Foot Step Decal: Enable or disable the feature to print foot decals on the ground
 
 > Decals Parameters: Customize the material, trace line-to-feet distance, character's foot sockets and socket rotation adjustment, foot decal size and foot decal duration
 
-> Play Foot Step Sound?: Enable or disable the feature to play foot step sound
+> Play Foot Step Sound: Enable or disable the feature to play foot step sound
 
 > Sounds Parameters: Customize the rotation, volume multiplier, pitch multiplier, start time, attenuation settings, concurrency settings, initials params and step sounds list
 
-> Play Foot Step VFX?: Enable or disable the feature
+> Play Foot Step VFX: Enable or disable the feature
 
 > VFX Parameters: Customize the VFX Method (using Niagara System or Particle System), rotation and scale
+
+> Enable Circle Decal: Enable or disable the feature
+
+> Circle Parameters: Customize the CircleDecalTag, material, trace line-to-feet distance, circle intensity, circle jump intensity, circle color, play circle jump animation and jump animation scale
 
 ## Events 🎫
 - It's possible to use foot manager events when a character or AI triggers one. (You can also use the "Assign" method in other blueprints)
 
-![image](https://github.com/17mylan/FootManagerComponent/assets/89989070/b1bc09f4-f0fc-493b-bc78-c0f8233caec7)
+![image](https://github.com/user-attachments/assets/f0119cf3-7314-4b58-bce9-abbeff9079e0)
 
 > Examples and ideas of what you can do with these events:
 

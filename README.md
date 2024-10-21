@@ -26,7 +26,7 @@
 
 ## Start 🎬
 - Download [this repository](https://github.com/17mylan/FootManagerComponent/) or from [Unreal Engine Marketplace](https://github.com/17mylan/FootManagerComponent/) (Not accessible at the moment)
-- If you downloaded the plugin from GitHub, install the un-zipped file named "FootManager" in your Unreal Engine Marketplace file. (e.g, D:\Game Engine\UE_5.4\Engine\Plugins\Marketplace\FootManager). Create the "Marketplace" File you don't have one.
+- If you downloaded the plugin from GitHub, install the un-zipped file named "FootManager" in your Unreal Project Plugins File. (e.g, D:\Unreal Projects\YourProjectName\Plugins). Create the "Plugins" File you don't have one.
 - Start your project and enable the plugin
 > Settings > Plugins > FootManager > Enable and restart your editor
 ![image](https://github.com/user-attachments/assets/bc4ecbdf-6ba3-4fb7-8c6f-dfc45f6f18d9)
